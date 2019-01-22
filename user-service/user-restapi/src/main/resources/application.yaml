@@ -1,0 +1,27 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true #启动服务健康状态检查
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: userapi
+feign:
+  hystrix:
+      enabled: true  #在D版本的Spring Cloud中，它没有默认打开。需要在配置文件中配置打开它
+
+hystrix:
+	  command:
+	    default:
+	      execution:
+	        isolation:
+	          thread:
+	            timeoutInMilliseconds: 4000
+
+
+
+

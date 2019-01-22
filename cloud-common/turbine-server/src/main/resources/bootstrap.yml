@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: turbine-server
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+  rabbitmq:    #配置rabbitmq
+    addresses: amqp://localhost:5672
+    username: jack
+    password: jack
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/cloud-common.iml" filepath="$PROJECT_DIR$/cloud-common/cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-mq/cloud-mq.iml" filepath="$PROJECT_DIR$/cloud-mq/cloud-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-parent.iml" filepath="$PROJECT_DIR$/cloud-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/config-server/config-server.iml" filepath="$PROJECT_DIR$/cloud-common/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/cloud-common/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/hystrix-client/hystrix-client.iml" filepath="$PROJECT_DIR$/cloud-common/hystrix-client/hystrix-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-domain/order-domain.iml" filepath="$PROJECT_DIR$/order-service/order-domain/order-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-rest/order-rest.iml" filepath="$PROJECT_DIR$/order-service/order-rest/order-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-vo/order-vo.iml" filepath="$PROJECT_DIR$/order-service/order-vo/order-vo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/turbine-server/turbine-server.iml" filepath="$PROJECT_DIR$/cloud-common/turbine-server/turbine-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-client/user-client.iml" filepath="$PROJECT_DIR$/user-service/user-client/user-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-entity/user-entity.iml" filepath="$PROJECT_DIR$/user-service/user-entity/user-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-restapi/user-restapi.iml" filepath="$PROJECT_DIR$/user-service/user-restapi/user-restapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/cloud-common/zipkin-server/zipkin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-common/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/cloud-common/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

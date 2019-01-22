@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: orderapi
+
+  cloud:
+    config:
+      uri: http://localhost:8888   #配置管理
+
+  rabbitmq:
+    addresses: amqp://localhost:5672  #配置bus
+    username: jack
+    password: jack
+

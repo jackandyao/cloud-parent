@@ -1,0 +1,44 @@
+server:
+  port: 9987
+
+# datasource
+spring:
+  datasource:
+    schema: classpath:/mysql_init.sql        #创建初始化mysql数据表
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myzipkin?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 12345678
+    initialize: true
+    continueOnError: true
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  sleuth.enabled: false
+
+# zipkin config
+zipkin:
+  storage:
+    type: mysql
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#ribbon config
+ribbon.ConnectTimeout: 5000
+ribbon.ReadTimeout: 10000
+

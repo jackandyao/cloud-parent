@@ -1,0 +1,27 @@
+#服务名称
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/waitforxy/config_cloud  #申请git 修改成自己的用户姓名和密码
+          username: ****@qq.com
+          password: *****
+          timeout: 5
+          default-label: master
+
+#服务的端口号
+server:
+  port: 9100
+
+
+#指定注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true

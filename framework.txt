@@ -1,0 +1,44 @@
+框架说明
+
+该框架综合展示了使用springcloud搭建微服务,先做简要模块说明
+
+cloud-common:主要提供了微服务的基本功能组件支撑
+    config-server: 微服务的配置管理
+    eureka-server: 服务发现/注册
+    hystrix-client: 服务熔断/降级可视化
+    turbine-server: 聚合多个服务熔断综合仪表盘展示
+    zuul-server: 服务的网关
+    zipkin-server: 多个服务之间的调用链追踪
+
+
+
+cloud-mq: 提供了基于微服务之间的通信机制,都是使用队列
+    cloud-rocketmq:封装基于rocketmq
+    cloud-kafka:封装基于kafka
+    cloud-rabbitmq:封装基于rabbitmq
+
+
+
+
+实例演示：主要通过用户服务调用订单服务,传入用户id,订单服务，返回一个或者多个订单信息即可
+,从演示效果的要求来看,主要是让用户服务如何调用订单服务
+
+
+order-service:基于订单模块的微服务
+    order-domain：基于DDD进行编程
+    order-restapi:提供对外服务的rest的api
+    order-vo:封装页面传递过来的请求参数
+
+
+
+user-service:基于用户模块的微服务
+    user-client:封装高性能的并发接口和负载均衡以及熔断
+    user-restapi:封装对外提供的api服务
+
+
+使用技术组件:
+redis+mq+es+config+eureka+zuul+zipkin+turbine+hystrix+fegion+future+jpa
+
+运行环境
+jdk1.8+mysql+reids+mq+git(类似于github)
+

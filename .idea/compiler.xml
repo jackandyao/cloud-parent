@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="cloud-base-eureka" />
+        <module name="cloud-mq" />
+        <module name="config-server" />
+        <module name="eureka-server" />
+        <module name="hystrix-client" />
+        <module name="order-domain" />
+        <module name="order-rest" />
+        <module name="order-vo" />
+        <module name="turbine-server" />
+        <module name="user-client" />
+        <module name="user-entity" />
+        <module name="user-restapi" />
+        <module name="zipkin-server" />
+        <module name="zuul-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-base" target="1.5" />
+      <module name="cloud-base-eureka" target="1.5" />
+      <module name="cloud-common" target="1.8" />
+      <module name="cloud-mq" target="1.8" />
+      <module name="cloud-parent" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="hystrix-client" target="1.8" />
+      <module name="order-client" target="1.8" />
+      <module name="order-domain" target="1.8" />
+      <module name="order-rest" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="order-vo" target="1.8" />
+      <module name="order-wap" target="1.8" />
+      <module name="order-web" target="1.8" />
+      <module name="turbine-server" target="1.8" />
+      <module name="user-client" target="1.8" />
+      <module name="user-domain" target="1.8" />
+      <module name="user-entity" target="1.8" />
+      <module name="user-rest" target="1.8" />
+      <module name="user-restapi" target="1.8" />
+      <module name="user-service" target="1.8" />
+      <module name="user-vo" target="1.8" />
+      <module name="user-wap" target="1.8" />
+      <module name="user-web" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
+      <module name="zuul-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
